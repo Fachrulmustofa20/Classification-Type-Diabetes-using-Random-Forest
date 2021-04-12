@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="687" viewBox="0 0 460 687">
+  <g id="Background_right" data-name="Background right" opacity="0.2">
+    <circle id="Oval" cx="230" cy="230" r="230" transform="translate(0 63)" fill="#ff9b21"/>
+    <circle id="Oval-2" data-name="Oval" cx="61.5" cy="61.5" r="61.5" transform="translate(255 564)" fill="rgba(43,68,255,0.5)"/>
+    <path id="Polygon" d="M49,0,98,49,49,98,0,49Z" transform="translate(143)" fill="#2b44ff"/>
+    <path id="Polygon-2" data-name="Polygon" d="M35.25,0,70.5,35.25,35.25,70.5,0,35.25Z" transform="translate(108 590)" fill="rgba(255,155,33,0.52)"/>
+    <path id="Polygon-3" data-name="Polygon" d="M12,0,24,12,12,24,0,12Z" transform="translate(391 63)" fill="#2026a2"/>
+  </g>
+</svg>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Type Diameters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png')}}" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='img/logo.svg')}}" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instruction">Instruksi Penggunaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="blank">Tentang Kami</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#test">Coba Test</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="title">
+                        <h1><strong>Type Diameters / Tipe Diabetes Tes</strong></h1>
+                    </div>
+                    <div class="description mb-2">
+                        <p class="text-justify"><strong>Type Diameters</strong> adalah sebuah webaite
+                            dengan
+                            teknologi Machine
+                            Learning (ML) untuk tes
+                            Tipe Diabetes.
+                            Website ini menggunakan algoritma Random
+                            Forest yang digunakan untuk memprediksi tipe diabetes.</p>
+                        <div class="button-main">
+                            <a class="btn btn-primary me-2 px-4 shadow" href="#test">Coba Test</a>
+                            <a class="btn btn-outline-primary px-3 shadow" href="#instruction">Baca
+                                Instruksi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <img src="{{ url_for('static', filename='img/image.svg')}}" class="img-fluid" alt="images">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="instruction">
+        <div class="container">
+            <h5 class="text-center fw-bold mb-3"><span class="highlight">Instruksi Penggunaan</span></h5>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 col-xs-3 my-auto">
+                    <img src="{{ url_for('static', filename='img/1.svg')}}" class="img-fluid img-custom" alt="langkah1"
+                        width="250px;">
+                </div>
+                <div class="col-sm-4 col-xs-4 text-justify my-auto">
+                    <h6 class="danger fw-bold">Langkah 1</h6>
+                    <p>
+                        Tekan tombol <span class="highlight">Coba Test</span> atau scroll kebawah sampai halaman Tes
+                        Tipe Diabetes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-xs-4 text-justify my-auto">
+                    <h6 class="danger fw-bold">Langkah 2</h6>
+                    <p>Sebelum mengisi pastikan anda <strong>Baca</strong> terlebih dahulu detail pada tombol <span
+                            class="highlight">Baca Detail</span> yang berwarna kuning.</p>
+                </div>
+                <div class="col-sm-3 col-xs-3 my-auto">
+                    <img src="{{ url_for('static', filename='img/2.svg')}}" class="img-fluid img-custom" alt="langkah2"
+                        height="250px;">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-3 col-xs-3 my-auto">
+                    <img src="{{ url_for('static', filename='img/3.svg')}}" class="img-fluid img-custom" alt="langkah3"
+                        width="250px;">
+                </div>
+                <div class="col-sm-4 col-xs-4 text-justify my-auto">
+                    <h6 class="danger fw-bold">Langkah 3</h6>
+                    <p>isi form dengan benar. Kemudian tunggu beberapa saat sistem akan memprediksi hasil dari Diagnosa.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="test">
+        <div class="container">
+            <h5 class="fw-bold mt-5 mb-3"><span class="highlight">Tes Tipe Diabetes</span></h5>
+            <p class="mb-2">Sebelum mengisi tes tipe diabetes harap membaca keterangan info detail
+                untuk melihat keterangan pada setiap inputan.
+                <!-- Button trigger modal -->
+            </p>
+            <button class="btn btn-warning btn-sm mb-3" type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Baca Detail
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Detail atribut tiap Inputan</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">Berikut detail keterangan setiap atribut / variabel yang ada
+                                    pada inputan.</div>
+                            </div>
+                            <table class="table table-striped table-responsive table-hover">
+                                <thead>
+                                    <th>No</th>
+                                    <th>Atribut</th>
+                                    <th>Tipe Data</th>
+                                    <th>Keterangan & Nilai</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Age</td>
+                                        <td>Integer / Bilangan Bulat</td>
+                                        <td>Umur Pasien</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>BS Fast</td>
+                                        <td>Float / Pecahan</td>
+                                        <td>Gula darah saat berpuasa sebelum makan (mmol/L)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>BS PP</td>
+                                        <td>Float / Pecahan</td>
+                                        <td>Gula darah dalam 90 menit setelah makan (mmol/L)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Plasma R</td>
+                                        <td>Float / Pecahan</td>
+                                        <td>Tes glukosa plasma dilakukan secara acak setiap saat (mmol/L)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.</td>
+                                        <td>Plasma F</td>
+                                        <td>Float / Pecahan</td>
+                                        <td>Tes glukosa plasma saat berpuasa biasanya dilakukan ketika pagi hari
+                                            (mmol/L)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6.</td>
+                                        <td>HbA1c</td>
+                                        <td>Integer / Bilangan Bulat</td>
+                                        <td>Tes ini dilakukan untuk mengukur rata-rata kadar glukosa selama 2-3
+                                            bulan terakhir (mmol/mol).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <p class="danger"><strong>Disclaimer : Sistem Type Diameters ini bukan untuk
+                                                menggantikan peran dari seorang pakar.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('predict')}}" method="post" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-age">
+                        <input type="text" name="Age" class="form-control" id="age" pattern="[0-9]+(\.[0-9]{1,5})?%?"
+                            required>
+                        <label for="bsfast">Age (Umur)</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-bsfast">
+                        <input type="text" name="BSFast" class="form-control" id="bsfast"
+                            pattern="[0-9]+(\.[0-9]{1,5})?%?" required>
+                        <label for="bsfast">BS Fast</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-bspp">
+                        <input type="text" name="BSpp" class="form-control" id="bspp" pattern="[0-9]+(\.[0-9]{1,5})?%?"
+                            required>
+                        <label for="bspp">BS PP</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-plasmar">
+                        <input type="text" name="PlasmaR" class="form-control" id="plasmar"
+                            pattern="[0-9]+(\.[0-9]{1,5})?%?" required>
+                        <label for="plasmar">Plasma R</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-plasmaf">
+                        <input type="text" name="PlasmaF" class="form-control" id="plasmaf"
+                            pattern="[0-9]+(\.[0-9]{1,5})?%?" required>
+                        <label for="plasmaf">Plasma F</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-floating" id="validation-hba1c">
+                        <input type="text" name="HbA1c" class="form-control" id="hba1c"
+                            pattern="[0-9]+(\.[0-9]{1,5})?%?" required>
+                        <label for="hba1c">HbA1c</label>
+                        <div class="invalid-feedback">
+                            Inputan Salah! Hanya diisi dengan angka
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Sudah Baca Detail
+                        </label>
+                        <div class="invalid-feedback">
+                            Pastikan beri tanda ceklis untuk melanjutkan.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary px-4 shadow btn-block" type="submit">Prediksi</button>
+                </div>
+            </form>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    {% if(prediction_text == 'Normal' ): %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">Selamat! Anda <strong>Normal</strong></h4>
+                        <p>Anda tidak terdiagnosa diabetes.</p>
+                        <hr>
+                        <p class="mb-0">Jika anda masih belum yakin. Silahkan konsultasikan ke dokter terdekat <i
+                                class="fa fa-smile-o" aria-hidden="true"></i></p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% elif(prediction_text == 'Type1'): %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">Anda Terdiagnosa Diabetes <strong>Type 1.</strong></h4>
+                        <p>Segera konsultasikan ke dokter untuk penanganan lebih lanjut.</p>
+                        <hr>
+                        <p class="mb-0">Jangan bersedih, tetap semangat dan semoga lekas sembuh <i class="fa fa-smile-o"
+                                aria-hidden="true"></i></p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% elif(prediction_text == 'Type2'): %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">Anda Terdiagnosa Diabetes <strong>Type 2.</strong></h4>
+                        <p>Segera konsultasikan ke dokter untuk penanganan lebih lanjut.</p>
+                        <hr>
+                        <p class="mb-0">Jangan bersedih, tetap semangat dan semoga lekas sembuh <i class="fa fa-smile-o"
+                                aria-hidden="true"></i></p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='img/logo.svg')}}" alt="logo">
+        </a>
+        <div class="footer-social-icons">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.instagram.com/fachrulmustofa/" target="blank" class="icoInstagram"
+                        title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Fachrulmustofa20" target="blank" class="icoGithub" title="Github"><i
+                            class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fachrul-mustofa-588a46124" target="blank" class="icoLinkedin"
+                        title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2021 Copyright || Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a class=""
+                    href="http://fachrulmustofa20.github.io/" target="_blank">Fachrul Mustofa</a></p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/style.js')}}"></script>
+</body>
+
+</html>
