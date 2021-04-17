@@ -9,7 +9,9 @@ body{
     background: transparent;
     border-color: transparent;
 }
-
+.nav-item a{
+    cursor: pointer;
+}
 .navbar li { 
     color: #000 
 } 

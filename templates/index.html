@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#instruction">Instruksi Penggunaan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" target="blank">Tentang Kami</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#about">Tentang Kami</a>
                     </li>
                     <hr>
                     <li class="nav-item">
@@ -42,6 +42,57 @@
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="about" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="about" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="about">Tentang Kami</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">Develop by:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <h4><strong>Fachrul Mustofa</strong></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">Website ini dibangun menggunakan:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ol>
+                                <li><a href="https://www.python.org/" target="_blank"
+                                        style="text-decoration: none; color: black;">Python V.3.8</a></li>
+                                <li><a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank"
+                                        style="text-decoration: none; color: black;">Flask
+                                        V.1.1.2</a></li>
+                                <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                                        target="_blank" style="text-decoration: none; color: black;">Bootstrap V.5</a>
+                                </li>
+                                <li><a href="https://scikit-learn.org/stable/" target="_blank"
+                                        style="text-decoration: none; color: black;">Scikit Learn</a></li>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-center">Thanks &#128522;</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="main">
         <div class="container">
@@ -51,7 +102,7 @@
                         <h1><strong>Type Diameters / Tipe Diabetes Tes</strong></h1>
                     </div>
                     <div class="description mb-2">
-                        <p class="text-justify"><strong>Type Diameters</strong> adalah sebuah webaite
+                        <p class="text-justify"><strong>Type Diameters</strong> adalah sebuah website
                             dengan
                             teknologi Machine
                             Learning (ML) untuk tes
