@@ -1,5 +1,5 @@
-# Implementation Random Forest
-Implementation random forest model with python using flask
+# Classification Type Diabetes using Random Forest
+This website implementation type diabetes using random forest model with python using flask.
 
 ### you can see this website <a href="https://diameters-test.herokuapp.com/" target="_blank">here</a>
 
@@ -16,6 +16,6 @@ This website built with:
 * <a href="https://scikit-learn.org/stable/" target="_blank">Scikit Learn</a>
 
 
-* Clone this repo:
+### Clone this repo:
 
 `$ git clone https://github.com/Fachrulmustofa20/Implementation_RandomForest.git`
