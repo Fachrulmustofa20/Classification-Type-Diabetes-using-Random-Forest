@@ -22,7 +22,8 @@ hr{
 
 .bg-nav{
     background-color: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,.10)!important;
+    /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;*/
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:visited {
