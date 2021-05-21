@@ -22,4 +22,4 @@ This website built with:
 
 ### Clone this repo:
 
-`$ git clone https://github.com/Fachrulmustofa20/Implementation_RandomForest.git`
+`$ git clone https://github.com/Fachrulmustofa20/Classification-Type-Diabetes-using-Random-Forest.git`
